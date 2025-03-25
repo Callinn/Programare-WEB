@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ro">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Creare CV</title>
+</head>
+
+<body bgcolor="#7da7a3">
+                               <div> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" alt="Fjords Image" width="240" height="160" align="middle">
+</div>
+    <div align="center">
+        <h1>CV</h1>
+
+        <h3><em>Formatul datei:</em></h3>
+        <label for="Data"></label>
+        <select id="Data" name="Data">
+            <option value="dd/mm/yyyy">dd/mm/yyyy</option>
+            <option value="mm/dd/yyyy">mm/dd/yyyy</option>
+            <option value="yyyy/mm/dd">yyyy/mm/dd</option>
+        </select>
+    </div>
+
+    <div align="center">
+				<!-- DATAE CU CARACTER PERSONAL-->
+
+        <form action="/action_page.php">
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                           <table border="1" bgcolor="#dbb973">
+                               	<caption><b>Date personale</b></caption>
+                               	<tr>
+                                   <th><label for="fname">Prenume:</label></th>
+                                   <th><input type="text" id="fname" name="fname"></th>
+                                   <th><label for="lname">Nume de familie:</label></th>
+                                   <th><input type="text" id="lname" name="lname"></th>
+                          	   <th><label for="tara">Țară de origine:</label></th>
+                                   <th><input type="text" id="tara" name="tara" value="România" readonly></th>
+                          
+				</tr>	
+				<tr><!-- DATA NASTERII -->
+		                   <th><label for="ziua">Ziua:</label></th>
+			 	   <th><input type="text" id="ziua" name="ziua"></th>
+				   <th><label for="luna">Luna:</label></th>
+				   <th>
+     			               <select id="luna" name="luna">
+                	        		    <option value="">--</option>
+        			                    <option value="1">Ianuarie</option>
+	       			                    <option value="2">Februarie</option>
+                	        		    <option value="3">Martie</option>
+                       			 	    <option value="4">Aprilie</option>
+   				                    <option value="5">Mai</option>
+                        			    <option value="6">Iunie</option>
+     				     		    <option value="7">Iulie</option>
+                            			    <option value="8">August</option>
+                            			    <option value="9">Septembrie</option>
+                              			    <option value="10">Octombrie</option>
+                            			    <option value="11">Noiembrie</option>
+                            			    <option value="12">Decembrie</option>
+                        		</select>
+				   </th>		              
+				   <th><label for="anul">Anul:</label></th>
+			 	   <th><input type="text" id="anul" name="anul"></th>
+				</tr>
+
+                            	<tr>
+
+                               		<td colspan="2">
+                                    		<label>Sex:</label>
+                                    		<label for="masculin"><input type="radio" id="masculin" name="sex" value="M" checked>Masculin</label>
+                                    		<label for="feminin"><input type="radio" id="feminin" name="sex" value="F">Feminin</label>
+                                	</td>
+                                	<td colspan="4"><input type="button" value="Doar un buton disabled" disabled></td>
+        	               </tr>
+			       
+			       <tr>
+                        
+                    <td colspan="2">
+                        <a href="https://www.cs.ubbcluj.ro/~bufny/programare-web/laborator-html/" target="_blank">Un link "safe"</a>
+                    </td>
+			       </tr>
+
+                           </table>
+                        </div>
+
+
+                        <div>
+			<hr>
+                            <table  align="center" bgcolor="#f0fff0;">
+                            <Caption><b>Pașaport sau carte de identitate</b></Caption>
+
+                               <tr>
+                                   <td>
+                                       <select name="act_de_identitate">
+                                           <option value="ci">Carte de identitate</option>
+                                           <option value="pasaport">Pașaport</option>
+                                           <option value="permis_sedere">Permis de ședere</option>
+                                       </select>
+                                   </td>
+
+                                    <td>
+                                        <input type="text" id="nr_identificare" name="nr_identificare">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+             		<div>
+                        <hr>
+                        	<table bgcolor="#faebd7">
+                           	 <!--                EDUCATIE-->
+                            	<caption><b>Educație</b></caption>
+                            	<tr>
+                                	<td colspan="1" valign="top"><label for="scoala">Școală:</label></td>
+                   			<td><input type="text" id="scoala" name="scoala" size="20"></td>
+                                	<td colspan="1" valign="top"><label for="liceu">Liceu:</label></td>
+                                	<td><input type="text" id="liceu" name="liceu" size="20"></td>
+                                	<td colspan="1" valign="top"><label for="facultate">Facultate:</label></td>
+                                	<td><input type="text" id="facultate" name="facultate" size="20"></td>
+                            	</tr>
+                            	<tr>
+                                <td colspan="6" bgcolor="#556b2f"><label><textarea name="message" rows="10" cols="95"></textarea></label></td>
+                            	</tr>
+                        	</table>
+                    	</div>
+
+			<hr><p><b>Preferințe profesionale</b></p><hr>
+			<p>Îți place să te implici în următoarele activități? (da, nu, nu știu):</p>
+			<table border="1" bgcolor="#5f9ea0">
+    			<tr>
+        			<td bgcolor="#a9a9a9">
+            			<ol type="A" start="1">
+                			<li>Să lucrezi cu date financiare.</li>
+                			<li>Să coordonezi echipe de proiect.</li>
+                			<li>Să lucrezi cu baze de date.</li>
+                			<li>Să dezvolți aplicații software.</li>
+                			<li>Să lucrezi în cercetare și dezvoltare.</li>
+            			</ol>
+        			</td>
+        			<td bgcolor="#add8e6">
+            			<ul >
+                			<li><label for="a"></label><input type="text" id="a" name="a"></li>
+                			<li><label for="b"></label><input type="text" id="b" name="b"></li>
+                			<li><label for="c"></label><input type="text" id="c" name="c"></li>
+                			<li><label for="d"></label><input type="text" id="d" name="d"></li>
+                			<li><label for="e"></label><input type="text" id="e" name="e"></li>
+            			</ul>
+        			</td>
+
+    			</tr>
+			</table>
+
+
+            		<p>Selectează abilitățile sau domeniile tale de expertiză:</p>
+            		<table>
+                		<tr>
+                    		<td>
+                        		<input type="checkbox" id="abilitate1" name="abilitate1" value="programare">
+                        		<label for="abilitate1">Programare</label>
+                    		</td>
+                    		<td>
+                        		<input type="checkbox" id="abilitate2" name="abilitate2" value="gestionare_proiecte">
+                        		<label for="abilitate2">Gestionare Proiecte</label>
+                    		</td>
+                    		<td>
+                        		<input type="checkbox" id="abilitate3" name="abilitate3" value="comunicare">
+                        		<label for="abilitate3">Comunicare</label>
+                    		</td>
+                    		<td>
+                        		<input type="checkbox" id="abilitate4" name="abilitate4" value="analiza_date">
+                        		<label for="abilitate4">Analiză de Date</label>
+                    		</td>
+                    		<td>
+                        		<input type="checkbox" id="abilitate5" name="abilitate5" value="design_ux">
+                        		<label for="abilitate5">Design UX/UI</label>
+                    		</td>
+                		</tr>
+			</table>
+
+			<div>
+				<!-- ADRESA-->
+                        	<table bgcolor="#faebd7">
+					<caption><b>Adresa</b></caption>
+					<tr>
+					        <td><label for="adr1">Linia de adresa 1:</label></td>
+                                   		<td><input type="text" id="adr1" name="adr1"></td>
+                                   		<td><label for="adr2">Linia de adresa 2:</label></td>
+                                   		<td><input type="text" id="adr2" name="adr2"></td>
+					</tr>
+					<tr>
+                               		 <th colspan="1">
+                                    		<select id="judet" name="judet">
+                                        		<option value="Alba">Alba</option>
+                               			        <option value="Arad">Arad</option>
+                   			                <option value="Arges">Argeș</option>
+                   			                <option value="Bacau">Bacău</option>
+                   			                <option value="Constata">Constanța</option>
+                         			        <option value="Oradea">Bihor</option>
+                 			                <option value="Bistrita-Nasaud">Bistrița-Năsăud</option>
+                			                <option value="Buzau">Buzău</option>
+                                        		<option value="Cluj" selected>Cluj</option>
+                                        		<option value="Galati">Galați</option>
+                                        		<option value="Ialomita">Ialomița</option>
+                   			                <option value="Neamt">Neamț</option>
+                                        		<option value="Satu Mare">Satu Mare</option>
+                                        		<option value="Maramureș">Maramureș</option>
+                                        		<option value="Timis">Timiș</option>
+                                        		<option value="Bucuresti">București</option>
+                                    		</select>
+                               		 </th>
+					 <th colspan="1"><label for="postal">Cod poștal:</label></th>
+                        	         <th colspan="2"><input type="text" id="postal" name="postal"></th>
+					</tr>
+                        	</table>
+
+			</div>
+
+			<div>
+			<hr>
+				<!-- DATE DE CONTACT-->
+                            <table  align="center" bgcolor="#f0fff0">
+                            <Caption><b>Date de contact</b></Caption>
+		           	<tr>
+                                <th><label for="email">Email:</label></th>
+                                <th><input type="text" id="email" name="email"></th>
+                                <th><label for="telefon">Telefon:</label></th>
+                                <th><input type="text" id="telefon" name="telefon" maxlength="10"></th>
+
+                                <th><label for="web">Website:</label></th>
+                                <th><input type="text" id="web" name="web"></th>
+				</tr>
+			    </table>						                        
+			</div>
+
+			<hr><p><b>Responsabilități și informații importante</b></p><hr>
+			<ol type="I">
+    				<li>Familiarizarea cu cerințele jobului
+        				<ul>
+            					<li>Înțelegerea completă a atribuțiilor și responsabilităților</li>
+         					<li>Conștientizarea așteptărilor de performanță</li>
+        				</ul>
+    				</li>
+    				<li>Adoptarea politicii de confidențialitate și securitate
+        				<ul>
+            					<li>Respectarea regulilor de protecție a datelor personale și confidențialității</li>
+            					<li>Utilizarea corectă a echipamentului și a software-ului companiei</li>
+        				</ul>
+    				</li>
+    				<li>Respectarea programului de lucru
+        				<ul>
+            					<li>Respectarea orelor de începere și terminare a activității</li>
+            					<li>Comunicarea în caz de întârzieri sau absențe</li>
+        				</ul>
+    				</li>
+    				<li>Participarea la sesiuni de formare profesională
+        				<ul>
+            					<li>Învățarea și dezvoltarea continuă a abilităților profesionale</li>
+            					<li>Aplicarea cunoștințelor dobândite în activitatea zilnică</li>
+        				</ul>
+    				</li>
+    				<li>Contribuirea la menținerea unui mediu de lucru pozitiv
+        				<ul>
+            					<li>Colaborarea eficientă cu colegii și managerii</li>
+            					<li>Comunicarea deschisă și constructivă</li>
+        				</ul>
+    				</li>
+			</ol>
+
+ 			<table>
+                        	<tr>
+                           	 <td><label for="files" title="Diplome/Certificate">Atașează diplome/certificate: </label></td>
+                            	 <td><input type="file" id="files" name="files"></td>
+                           	 <td width="270"></td>
+                            	 <td><input type="reset" value="Resetează"></td>
+                            	 <td><input type="submit" value="Trimite"></td>
+                        	</tr>
+                    	</table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

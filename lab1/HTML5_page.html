@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare CV</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png" alt="Fjords Image" width="240" height="160">
+    </header>
+
+    <main>
+        <section>
+            <h1>CV</h1>
+            <h3><em>Formatul datei:</em></h3>
+            <label for="Data"></label>
+            <select id="Data" name="Data">
+                <option value="dd/mm/yyyy">dd/mm/yyyy</option>
+                <option value="mm/dd/yyyy">mm/dd/yyyy</option>
+                <option value="yyyy/mm/dd">yyyy/mm/dd</option>
+            </select>
+        </section>
+
+        <section>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend><b>Date personale</b></legend>
+                    <h4>Introduceți datele personale:</h4>
+		    <label for="fname">Prenume:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Nume de familie:</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="tara">Țară de origine:</label>
+                    <input type="text" id="tara" name="tara" value="România" readonly>
+
+                    <label for="ziua">Ziua:</label>
+                    <input type="number" id="ziua" name="ziua">
+                    <label for="luna">Luna:</label>
+                    <select id="luna" name="luna">
+                        <option value="">--</option>
+                        <option value="1">Ianuarie</option>
+                        <option value="2">Februarie</option>
+                        <option value="3">Martie</option>
+                        <option value="4">Aprilie</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Iunie</option>
+                        <option value="7">Iulie</option>
+                        <option value="8">August</option>
+                        <option value="9">Septembrie</option>
+                        <option value="10">Octombrie</option>
+                        <option value="11">Noiembrie</option>
+                        <option value="12">Decembrie</option>
+                    </select>
+                    <label for="anul">Anul:</label>
+                    <input type="number" id="anul" name="anul">
+
+                    <label>Sex:</label>
+                    <label for="masculin"><input type="radio" id="masculin" name="sex" value="M" checked>Masculin</label>
+                    <label for="feminin"><input type="radio" id="feminin" name="sex" value="F">Feminin</label>
+
+                    <button type="button" disabled>Doar un buton disabled</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Pașaport sau carte de identitate</b></legend>
+		<h4>Alegeți tipul documentului si introduceți N.I.:</h4>
+                <label for="act_de_identitate">Tip document:</label>
+                <select name="act_de_identitate" id="act_de_identitate">
+                    <option value="ci">Carte de identitate</option>
+                    <option value="pasaport">Pașaport</option>
+                    <option value="permis_sedere">Permis de ședere</option>
+                </select>
+
+                <label for="nr_identificare">Număr identificare:</label>
+                <input type="text" id="nr_identificare" name="nr_identificare">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Educație</b></legend>
+		<h4>Introduceți datele legate de nivelul de învățământ</h4>
+                <label for="scoala">Școală:</label>
+                <input type="text" id="scoala" name="scoala">
+                <label for="liceu">Liceu:</label>
+                <input type="text" id="liceu" name="liceu">
+                <label for="facultate">Facultate:</label>
+                <input type="text" id="facultate" name="facultate">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Preferințe profesionale</b></legend>
+                <h4>Selectați</h4>
+		<p>Îți place să te implici în următoarele activități? (da, nu, nu știu):</p>
+                <ul>
+                    <li>Să lucrezi cu date financiare.</li>
+                    <li>Să coordonezi echipe de proiect.</li>
+                    <li>Să lucrezi cu baze de date.</li>
+                    <li>Să dezvolți aplicații software.</li>
+                    <li>Să lucrezi în cercetare și dezvoltare.</li>
+                </ul>
+
+                <label for="abilitate1">Programare</label>
+                <input type="checkbox" id="abilitate1" name="abilitate1" value="programare">
+                <label for="abilitate2">Gestionare Proiecte</label>
+                <input type="checkbox" id="abilitate2" name="abilitate2" value="gestionare_proiecte">
+                <label for="abilitate3">Comunicare</label>
+                <input type="checkbox" id="abilitate3" name="abilitate3" value="comunicare">
+                <label for="abilitate4">Analiză de Date</label>
+                <input type="checkbox" id="abilitate4" name="abilitate4" value="analiza_date">
+                <label for="abilitate5">Design UX/UI</label>
+                <input type="checkbox" id="abilitate5" name="abilitate5" value="design_ux">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Adresa</b></legend>
+		<h4>Domiciliul dumneavoastră este:</h4>
+                <label for="adr1">Linia de adresa 1:</label>
+                <input type="text" id="adr1" name="adr1">
+                <label for="adr2">Linia de adresa 2:</label>
+                <input type="text" id="adr2" name="adr2">
+
+                <label for="judet">Județ:</label>
+                <select id="judet" name="judet">
+                    <option value="Cluj" selected>Cluj</option>
+                    <option value="Alba">Alba</option>
+                    <option value="Arad">Arad</option>
+                    <option value="Bucuresti">București</option>
+                    <option value="Constanta">Constanța</option>
+                    <!-- adaugă mai multe județe dacă vrei -->
+                </select>
+
+                <label for="postal">Cod poștal:</label>
+                <input type="text" id="postal" name="postal">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Date de contact</b></legend>
+		<h4>Introduceți datele de contact</h4>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" maxlength="10">
+
+                <label for="web">Website:</label>
+                <input type="text" id="web" name="web">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Responsabilități și informații importante</b></legend>
+                <h4>De citit</h4>
+			<ol type="I">
+    				<li>Familiarizarea cu cerințele jobului
+        				<ul>
+            					<li>Înțelegerea completă a atribuțiilor și responsabilităților</li>
+         					<li>Conștientizarea așteptărilor de performanță</li>
+        				</ul>
+    				</li>
+    				<li>Adoptarea politicii de confidențialitate și securitate
+        				<ul>
+            					<li>Respectarea regulilor de protecție a datelor personale și confidențialității</li>
+            					<li>Utilizarea corectă a echipamentului și a software-ului companiei</li>
+        				</ul>
+    				</li>
+    				<li>Respectarea programului de lucru
+        				<ul>
+            					<li>Respectarea orelor de începere și terminare a activității</li>
+            					<li>Comunicarea în caz de întârzieri sau absențe</li>
+        				</ul>
+    				</li>
+    				<li>Participarea la sesiuni de formare profesională
+        				<ul>
+            					<li>Învățarea și dezvoltarea continuă a abilităților profesionale</li>
+            					<li>Aplicarea cunoștințelor dobândite în activitatea zilnică</li>
+        				</ul>
+    				</li>
+    				<li>Contribuirea la menținerea unui mediu de lucru pozitiv
+        				<ul>
+            					<li>Colaborarea eficientă cu colegii și managerii</li>
+            					<li>Comunicarea deschisă și constructivă</li>
+        				</ul>
+    				</li>
+			</ol>
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend><b>Atașează diplome/certificate</b></legend>
+		<h4>De atașat</h4>
+                <label for="files">Diplome/Certificate:</label>
+                <input type="file" id="files" name="files">
+
+                <button type="reset">Resetează</button>
+                <button type="submit">Trimite</button>
+            </fieldset>
+        </section>
+    </main>
+</body>
+
+</html>
